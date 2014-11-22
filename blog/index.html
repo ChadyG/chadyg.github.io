@@ -1,6 +1,6 @@
 ---
 layout: default
-navbar: topnav.html
+navbar: blognav.html
 ---
        
   
@@ -26,7 +26,7 @@ navbar: topnav.html
                         <!-- .entry-meta --> 
                         <footer class="entry-meta">
                             <span class="post-format"></span>
-                                	<span title="{{ post.date | date: "%Y" }}" class="date"><span class="day">{{ post.date | date: "%B" }}</span>{{ page.date | date: "%e" }}</span>
+                                	<span title="{{ post.date | date: "%Y" }}" class="date"><span class="day">{{ post.date | date: "%B" }}</span>{{ post.date | date: "%e" }}</span>
                             <!--<span class="entry-comment"><span class="count">3</span>comments</span>-->
                         </footer>
                         <!-- .entry-meta -->  
@@ -51,7 +51,6 @@ navbar: topnav.html
                         <!-- .entry-content -->     
                         <div class="entry-content">
                             <p>
-                            {{ page.excerpt | textilize }}
                             <a href="{{ site.baseurl }}{{ post.url }}" class="more-link">Continue reading <span class="meta-nav">→</span></a></p>
                         </div>
                         <!-- .entry-content -->
