@@ -92,7 +92,7 @@ navbar: blognav.html
                             {% endif %}
                             
                             <p>
-                            {% if page.excerpt %}{{ page.excerpt | textilize }}{% endif %}
+                            {% if post.excerpt %}{{ post.excerpt | textilize }}{% endif %}
                         	{% if post.type == "post" %}
                             <a href="{{ site.baseurl }}{{ post.url }}" class="more-link">Continue reading <span class="meta-nav">→</span></a></p>
                         	{% endif %}
