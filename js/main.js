@@ -292,7 +292,10 @@ var $container, $blog_container;
 				var myLatlng = new google.maps.LatLng(mapCanvas.data("latitude"),mapCanvas.data("longitude"));
 				var mapOptions = {
 					zoom: mapCanvas.data("zoom"),
-					center: myLatlng
+					center: myLatlng,
+					styles: [ 
+						{stylers: [ { "saturation":-100 }, { "lightness": 0 }, { "gamma": 0.5 }]},
+					]
 				}
 				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 				
