@@ -51,6 +51,7 @@ navbar: blognav.html
                         <!-- .entry-content -->     
                         <div class="entry-content">
                             <p>
+                            {{ page.excerpt | textilize }}
                             <a href="{{ site.baseurl }}{{ post.url }}" class="more-link">Continue reading <span class="meta-nav">→</span></a></p>
                         </div>
                         <!-- .entry-content -->
