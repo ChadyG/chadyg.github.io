@@ -72,3 +72,12 @@ exclude:
     - Gemfile.lock
     - LICENSE
     - README.md
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      image: "/images/blog/blog-01.png"
+      
