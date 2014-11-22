@@ -69,6 +69,13 @@
 				<h1>Chad Godsey</h1>
                 <p>All Around Cool Guy</p>
 				
+				{% if content.navbar %}
+				{% include content.navbar %}
+				{% endif %}
+                
+			</header>
+            <!-- HEADER -->
+            
 
             {{ content }}
             
