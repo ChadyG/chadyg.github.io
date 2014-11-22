@@ -58,7 +58,7 @@ navbar: blognav.html
                       
                       <!-- .featured-image -->  
                       <div class="featured-image">
-                        <img src="{{ site.baseurl }}/images/blog/lee.png" alt="blog-image">
+                        <img src="{{ site.baseurl }}{{ page.image }}" alt="blog-image">
                       </div>
                       <!-- .featured-image --> 
                       
@@ -76,7 +76,9 @@ navbar: blognav.html
                       <!-- .entry-meta -->
                       <footer class="entry-meta">
                         <h3>TAGS</h3>
-                        <a href="#" rel="tag">design</a> <a href="#" rel="tag">responsive</a> <a href="#" rel="tag">think</a>
+                        {% for tag in page.tags %}
+                        <a href="#" rel="tag">{{ tag }}</a>
+                        {% endfor %}
                       </footer>
                       <!-- .entry-meta -->
                       
